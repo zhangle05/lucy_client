@@ -3,7 +3,6 @@ import { MenuController, NavController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate/ng2-translate';
 
 import { TabsPage } from '../tabs/tabs';
-import { Settings } from '../../providers/settings';
 
 export interface Slide {
   title: string;
@@ -16,11 +15,10 @@ export interface Slide {
   templateUrl: 'tutorial.html'
 })
 export class TutorialPage {
-  private MULTI_RUN_KEY: string = '_multi_run';
   slides: Slide[];
   showSkip = true;
 
-  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public settings: Settings) {
+  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService) {
     translate.get(["TUTORIAL_SLIDE1_TITLE",
                    "TUTORIAL_SLIDE1_DESCRIPTION",
                    "TUTORIAL_SLIDE2_TITLE",
@@ -47,14 +45,6 @@ export class TutorialPage {
         }
       ];
     });
-    this.settings.load().then(() => {
-      var options = this.settings.allSettings;
-      var isMultiRun = options[this.MULTI_RUN_KEY];
-      console.log('multi run flag in storage is:', isMultiRun);
-      if (isMultiRun) {
-        this.startApp();
-      }
-    });
   }
 
   startApp() {
@@ -62,7 +52,6 @@ export class TutorialPage {
       animate: true,
       direction: 'forward'
     });
-    this.settings.setValue(this.MULTI_RUN_KEY, true);
   }
 
   onSlideChangeStart(slider) {
