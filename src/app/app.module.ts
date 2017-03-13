@@ -15,6 +15,7 @@ import { SignupPage } from '../pages/signup/signup';
 
 import { User } from '../providers/user';
 import { Api } from '../providers/api';
+import { Settings } from '../providers/settings';
 
 
 import { TranslateModule, TranslateLoader, TranslateStaticLoader } from 'ng2-translate/ng2-translate';
@@ -26,11 +27,26 @@ export function createTranslateLoader(http: Http) {
   return new TranslateStaticLoader(http, './assets/i18n', '.json');
 }
 
+export function provideSettings(storage: Storage) {
+  /**
+   * The Settings provider takes a set of default settings for your app.
+   *
+   * You can add new settings options at any time. Once the settings are saved,
+   * these values will not overwrite the saved values (this can be done manually if desired).
+   */
+  return new Settings(storage, {
+    option1: true,
+    option2: 'Ionitron J. Framework',
+    option3: '3',
+    option4: 'Hello'
+  });
+}
+
 let pages = [
     MyApp,
 	TutorialPage,
 	TabsPage,
-    HomePage,
+  HomePage,
 	FoundPage,
 	SpacePage,
 	MyPage,
@@ -55,7 +71,8 @@ export function providers() {
     User,
     Api,
 	{ provide: ErrorHandler, useClass: IonicErrorHandler },
-	{ provide: Storage, useFactory: provideStorage }
+	{ provide: Storage, useFactory: provideStorage },
+  { provide: Settings, useFactory: provideSettings, deps: [ Storage ] },
   ];
 }
 
