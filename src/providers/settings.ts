@@ -8,6 +8,7 @@ import { Storage } from '@ionic/storage';
 @Injectable()
 export class Settings {
   private SETTINGS_KEY: string = '_settings';
+  private MULTI_RUN_KEY: string = '_multi_run';
 
   settings: any;
 
@@ -57,10 +58,7 @@ export class Settings {
   }
 
   getValue(key: string) {
-    return this.storage.get(this.SETTINGS_KEY)
-      .then(settings => {
-        return settings[key];
-      });
+    return this.settings[key];
   }
 
   save() {
@@ -69,5 +67,12 @@ export class Settings {
 
   get allSettings() {
     return this.settings;
+  }
+
+  getMultiRun() {
+    return this.getValue(this.MULTI_RUN_KEY);
+  }
+  setMultiRun() {
+    this.setValue(this.MULTI_RUN_KEY, true);
   }
 }

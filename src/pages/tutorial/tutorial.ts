@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 import { MenuController, NavController } from 'ionic-angular';
 import { TranslateService } from 'ng2-translate/ng2-translate';
 
+
 import { TabsPage } from '../tabs/tabs';
+import { Settings } from '../../providers/settings';
 
 export interface Slide {
   title: string;
@@ -18,7 +20,7 @@ export class TutorialPage {
   slides: Slide[];
   showSkip = true;
 
-  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService) {
+  constructor(public navCtrl: NavController, public menu: MenuController, translate: TranslateService, public settings: Settings) {
     translate.get(["TUTORIAL_SLIDE1_TITLE",
                    "TUTORIAL_SLIDE1_DESCRIPTION",
                    "TUTORIAL_SLIDE2_TITLE",
@@ -48,6 +50,7 @@ export class TutorialPage {
   }
 
   startApp() {
+    this.settings.setMultiRun();
     this.navCtrl.setRoot(TabsPage, {}, {
       animate: true,
       direction: 'forward'

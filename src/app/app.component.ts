@@ -11,8 +11,8 @@ import { Settings } from '../providers/settings';
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
-  private MULTI_RUN_KEY: string = '_multi_run';
   rootPage : any;
   constructor(platform: Platform, translate: TranslateService, public settings: Settings) {
 	  translate.setDefaultLang('zh-CN');
@@ -24,16 +24,15 @@ export class MyApp {
       Splashscreen.hide();
 
       this.settings.load().then(() => {
-        var options = this.settings.allSettings;
-        var isMultiRun = options[this.MULTI_RUN_KEY];
+        var isMultiRun = this.settings.getMultiRun();
         console.log('multi run flag in storage is:', isMultiRun);
         if (isMultiRun) {
           this.rootPage = TabsPage;
         } else {
           this.rootPage = TutorialPage;
-          this.settings.setValue(this.MULTI_RUN_KEY, true);
         }
       });
     });
   }
 }
+

@@ -43,7 +43,7 @@ export function provideSettings(storage: Storage) {
 }
 
 let pages = [
-    MyApp,
+  MyApp,
 	TutorialPage,
 	TabsPage,
   HomePage,
