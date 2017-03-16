@@ -5,6 +5,13 @@
   "SPACE": "空间",
   "MY": "我的",
   
+  "HOME_BLUETOOTH": "蓝牙门禁",
+  "HOME_PAY": "快捷支付",
+  "HOME_STATION": "移动工位",
+  "HOME_MEETING_ROOM": "会议室预定",
+  "HOME_PACKAGES": "快递通知",
+  "HOME_ACTIVITY": "社区活动",
+  
   "BACK_BUTTON_TEXT" : "返回",
 
   "NAME": "姓名",

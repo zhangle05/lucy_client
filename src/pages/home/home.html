@@ -6,7 +6,7 @@
       </button>
     </ion-buttons>
 
-    <ion-title>{{ 'HOME' | translate }}</ion-title>
+    <ion-title><img src="../assets/img/headicon.png" style="height: 35px"/></ion-title>
 
     <ion-buttons end>
       <button ion-button icon-only>
@@ -19,18 +19,88 @@
 
 <ion-content>
   <ion-slides pager autoplay="2000" loop="true" speed="1000" style="height:200px;">
-
-      <ion-slide style="background-color: green">
-        <h2>Slide 1</h2>
+      <ion-slide>
+        <img src="../assets/img/home-slide-1.jpg" />
       </ion-slide>
 
-      <ion-slide style="background-color: blue">
-        <h2>Slide 2</h2>
+      <ion-slide>
+        <img src="../assets/img/home-slide-2.jpg" />
       </ion-slide>
 
-      <ion-slide style="background-color: red">
-        <h2>Slide 3</h2>
+      <ion-slide>
+        <img src="../assets/img/home-slide-3.jpg" />
       </ion-slide>
-
+	  
+	  <ion-slide>
+        <img src="../assets/img/home-slide-4.jpg" />
+      </ion-slide>
     </ion-slides>
+	
+	<ion-grid style="padding: 0;">
+	  <ion-row>
+		<ion-col col-12 class="section-title">赛先生空间</ion-col>
+	  </ion-row>
+	  <ion-row>
+		<ion-col col-6 class="bluetooth">
+			<span>{{ 'HOME_BLUETOOTH' | translate }}</span>
+		</ion-col>
+		<ion-col col-6>
+			<ion-row>
+				<ion-col col-6 class="pay small">
+					<span>{{ 'HOME_PAY' | translate }}</span>
+				</ion-col>
+				<ion-col col-6 class="station small">
+					<span>{{ 'HOME_STATION' | translate }}</span>
+				</ion-col>
+			</ion-row>
+			<ion-row>
+				<ion-col col-6 class="meeting-room small">
+					<span>{{ 'HOME_MEETING_ROOM' | translate }}</span>
+				</ion-col>
+				<ion-col col-6 class="packages small">
+					<span>{{ 'HOME_PACKAGES' | translate }}</span>
+				</ion-col>
+			</ion-row>
+		</ion-col>
+	  </ion-row>
+	  <ion-row>
+		<ion-col col-12 style="background-color:#eee;"></ion-col>
+	  </ion-row>
+	  <ion-row>
+		<ion-col col-12 class="section-title">{{ 'HOME_ACTIVITY' | translate }}</ion-col>
+	  </ion-row>
+	</ion-grid>
+	
+	
 </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

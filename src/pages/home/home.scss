@@ -1,3 +1,91 @@
 page-home {
-
+	.bluetooth {
+		position: relative;
+		background: url('../assets/img/bluetooth.png') no-repeat transparent;
+		background-size: 130px 130px;
+		background-position: 10px 10px;
+		height: 165px;
+		
+	}
+	.bluetooth span {
+		position: absolute;
+		bottom: 3px;
+		left: 50px;
+	}
+	.small {
+		position: relative;
+		height: 80px;
+	}
+	.pay {
+		background: url('../assets/img/pay.png') no-repeat transparent;
+		background-size: 60px 60px;
+		background-position: 5px 0px;
+	}
+	.pay span, .station span, .meeting-room span, .packages span {
+		position: absolute;
+		bottom: 5px;
+		left: 10px;
+		font-size: 13px;
+	}
+	.station {
+		background: url('../assets/img/station.png') no-repeat transparent;
+		background-size: 60px 50px;
+		background-position: 5px 0px;
+	}
+	.meeting-room {
+		background: url('../assets/img/meeting.png') no-repeat transparent;
+		background-size: 50px 50px;
+		background-position: 5px 0px;
+	}
+	.meeting-room span {
+		left: 5px;
+	}
+	.packages {
+		background: url('../assets/img/package.png') no-repeat transparent;
+		background-size: 50px 50px;
+		background-position: 5px 0px;
+	}
+	.section-title {
+		font-weight: bold;
+		background: url('../assets/img/vertical-bar.png') no-repeat transparent;
+		background-size: 15px 15px;
+		background-position: 2px 7px;
+		padding-left: 18px;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

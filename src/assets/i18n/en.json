@@ -5,6 +5,12 @@
   "SPACE": "Space",
   "MY": "My",
   
+  "HOME_BLUETOOTH": "Bluetooth",
+  "HOME_PAY": "Easy pay",
+  "HOME_STATION": "Station",
+  "HOME_MEETING_ROOM": "Meeting room",
+  "HOME_PACKAGES": "Packages",
+  "HOME_ACTIVITY": "Hot activities",
   
   "BACK_BUTTON_TEXT" : "Back",
 
