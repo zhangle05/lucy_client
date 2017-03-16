@@ -37,30 +37,65 @@
     </ion-slides>
 	
 	<ion-grid style="padding: 0;">
+      <ion-row>
+        <ion-col col-12 class="section-title">赛先生信息</ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>
+            <img src="../assets/img/twitter.png" />
+        </ion-col>
+        <ion-col col-3>
+            <img src="../assets/img/linkedin.png" />
+        </ion-col>
+        <ion-col col-3>
+            <img src="../assets/img/github.png" />
+        </ion-col>
+        <ion-col col-3>
+            <img src="../assets/img/hpc.png" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-3>
+            <img src="../assets/img/rr.png" />
+        </ion-col>
+        <ion-col col-3>
+            <img src="../assets/img/ps.png" />
+        </ion-col>
+        <ion-col col-3>
+            <img src="../assets/img/kfc.png" />
+        </ion-col>
+        <ion-col col-3>
+            <img src="../assets/img/jl.png" />
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+            <div class="read-more">{{ 'HOME_READ_MORE' | translate }}</div>
+        </ion-col>
+      </ion-row>
 	  <ion-row>
-		<ion-col col-12 class="section-title">赛先生空间</ion-col>
+		<ion-col col-12 class="section-title">{{ 'HOME_CHECKIN' | translate }}</ion-col>
 	  </ion-row>
 	  <ion-row>
-		<ion-col col-6 class="bluetooth">
-			<span>{{ 'HOME_BLUETOOTH' | translate }}</span>
+		<ion-col col-5 class="do-checkin">
+			<span>{{ 'HOME_DO_CHECKIN' | translate }}</span>
 		</ion-col>
 		<ion-col col-6>
+            <ion-row>
+                <ion-col col-12 class="office small">
+                    {{ 'HOME_OFFICE' | translate }}
+                </ion-col>
+            </ion-row>
 			<ion-row>
-				<ion-col col-6 class="pay small">
-					<span>{{ 'HOME_PAY' | translate }}</span>
-				</ion-col>
-				<ion-col col-6 class="station small">
-					<span>{{ 'HOME_STATION' | translate }}</span>
+				<ion-col col-12 class="station small">
+					{{ 'HOME_STATION' | translate }}
 				</ion-col>
 			</ion-row>
-			<ion-row>
-				<ion-col col-6 class="meeting-room small">
-					<span>{{ 'HOME_MEETING_ROOM' | translate }}</span>
-				</ion-col>
-				<ion-col col-6 class="packages small">
-					<span>{{ 'HOME_PACKAGES' | translate }}</span>
-				</ion-col>
-			</ion-row>
+            <ion-row>
+                <ion-col col-12 class="meeting-room small">
+                    {{ 'HOME_MEETING_ROOM' | translate }}
+                </ion-col>
+            </ion-row>
 		</ion-col>
 	  </ion-row>
 	  <ion-row>

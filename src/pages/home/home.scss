@@ -1,49 +1,52 @@
 page-home {
-	.bluetooth {
+	.do-checkin {
 		position: relative;
-		background: url('../assets/img/bluetooth.png') no-repeat transparent;
-		background-size: 130px 130px;
+		background: url('../assets/img/checkin.png') no-repeat transparent;
+		background-size: 128px 128px;
 		background-position: 10px 10px;
 		height: 165px;
 		
 	}
-	.bluetooth span {
+	.read-more {
+		color: #777;
+		margin-top: 5px;
+		margin-bottom: 10px;
+		background-color: #eeeeff;
+		height: 24px;
+		line-height: 24px;
+		border-radius: 12px;
+		text-align:center;
+	}
+	.do-checkin span {
 		position: absolute;
 		bottom: 3px;
 		left: 50px;
 	}
 	.small {
 		position: relative;
-		height: 80px;
-	}
-	.pay {
-		background: url('../assets/img/pay.png') no-repeat transparent;
-		background-size: 60px 60px;
-		background-position: 5px 0px;
-	}
-	.pay span, .station span, .meeting-room span, .packages span {
-		position: absolute;
-		bottom: 5px;
-		left: 10px;
-		font-size: 13px;
+		height: 32px;
+		padding-left: 40px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+		margin-left: 25px;
 	}
 	.station {
-		background: url('../assets/img/station.png') no-repeat transparent;
-		background-size: 60px 50px;
-		background-position: 5px 0px;
+		background: url('../assets/img/chair.png') no-repeat transparent;
+		background-size: 32px 32px;
+		background-position: 0px 0px;
+	}
+	.office {
+		background: url('../assets/img/office.png') no-repeat transparent;
+		background-size: 32px 32px;
+		background-position: 0px 0px;
 	}
 	.meeting-room {
-		background: url('../assets/img/meeting.png') no-repeat transparent;
-		background-size: 50px 50px;
-		background-position: 5px 0px;
+		background: url('../assets/img/meeting-room.png') no-repeat transparent;
+		background-size: 32px 32px;
+		background-position: 0px 0px;
 	}
-	.meeting-room span {
+	.office span {
 		left: 5px;
-	}
-	.packages {
-		background: url('../assets/img/package.png') no-repeat transparent;
-		background-size: 50px 50px;
-		background-position: 5px 0px;
 	}
 	.section-title {
 		font-weight: bold;

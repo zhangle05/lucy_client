@@ -7,10 +7,14 @@
   
   "HOME_BLUETOOTH": "蓝牙门禁",
   "HOME_PAY": "快捷支付",
-  "HOME_STATION": "移动工位",
+  "HOME_OFFICE": "办公室预定",
+  "HOME_STATION": "工位预定",
   "HOME_MEETING_ROOM": "会议室预定",
   "HOME_PACKAGES": "快递通知",
   "HOME_ACTIVITY": "社区活动",
+  "HOME_READ_MORE": "了解更多",
+  "HOME_CHECKIN": "我要入驻",
+  "HOME_DO_CHECKIN": "办理入驻",
   
   "BACK_BUTTON_TEXT" : "返回",
 
